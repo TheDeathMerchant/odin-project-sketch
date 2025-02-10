@@ -1,0 +1,26 @@
+[class^="row-"] {
+    display:flex;
+    /* flex-basis:100%; */
+    height:auto;
+    width : 100%;
+}
+[class^="inner-"] {
+    min-height:75px;
+    min-width:75px;
+    background-color: blue;
+    border: 1px solid black;
+    flex-grow:1;
+    margin:5px
+}
+[class^="inner-"]:nth-of-type(2n) {
+    background-color: red;
+}
+[class^="inner-"]:nth-of-type(2n):hover {
+    background-color: aqua;
+    transition-duration: 2s;
+}
+[class^="inner-"]:nth-of-type(2n-1):hover {
+    background-color: hotpink;
+    transition-duration: 2s;
+}
+
